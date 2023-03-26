@@ -1,7 +1,7 @@
 #include <iostream>
 #include <ctime>
-//#include "Ocean.h"
-#include "Sea.h"
+
+#include "Ocean.h"
 
 using namespace std;
 
@@ -9,33 +9,37 @@ int main()
 {
 	setlocale(LC_ALL, "Russian");
 
-	string NamesOcean[8] = {
-	"Южный",
-	"Красный",
-	"Лименский",
-	"Зоронский",
-	"Советский",
-	"Атматический",
-	"Орлеанский",
-	"Солнечный",
-	};
-	string NamesSea[8] = {
-		"Унарное",
-		"Арабское",
-		"Кабанье",
-		"Сильное",
-		"Франзенское",
-		"Белорусское",
-		"Батинское",
-		"Мирное",
-	};
-
 	srand(time(NULL));
-	Ocean Ocean1(NamesOcean[rand() % 8], rand() % 8500 + 3500, (rand() % 1000000 + 200000) / 10.0);
-	Sea Sea1(NamesSea[rand() % 8], rand() % 8500 + 3500, (rand() % 100000 + 20000) / 10.0);
-	cout << Ocean1;
+
+	Ocean f1,f2,f3,f4;
+	f1.addSea();
+	f1.addSea();
+	f1.seas[0].addZaliv();
+	f1.seas[0].addZaliv();
+	f1.seas[1].addZaliv();
+	f1.seas[1].addZaliv();
+	f1.seas[1].addZaliv();
+	f3.addSea();
+
+	cout << f1 << "\n";
+	cout << f2 << "\n";
+	cout << f3 << "\n";
+
+	f4.addSea();
+	f4.seas[0].addZaliv();
+	
+	cout << "\nР’РІРµРґРёС‚Рµ РґР°РЅРЅС‹Рµ РѕРєРµР°РЅР° (РќР°Р·РІР°РЅРёРµ, РіР»СѓР±РёРЅР°, СЂР°Р·РјРµСЂ):";
+	cin >> f4;
+	cout << "Р’РІРµРґРёС‚Рµ РґР°РЅРЅС‹Рµ РјРѕСЂСЏ (РќР°Р·РІР°РЅРёРµ, РіР»СѓР±РёРЅР°, СЂР°Р·РјРµСЂ):";
+	cin >> f4.seas[0];
+	cout << "Р’РІРµРґРёС‚Рµ РґР°РЅРЅС‹Рµ Р·Р°Р»РёРІР° (РќР°Р·РІР°РЅРёРµ, РіР»СѓР±РёРЅР°, СЂР°Р·РјРµСЂ):";
+	cin >> f4.seas[0].zalivs[0];
+
 	cout << "\n";
-	cout << " " << Sea1;
+	
+	cout << f4;
+
+	cout << "\n";
 
 	return 0;
 }
