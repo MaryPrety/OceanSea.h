@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+﻿#include "Sea.h"
+=======
 #include "Sea.h"
 #include <Windows.h>
 
@@ -11,6 +14,22 @@ void Sea::addZaliv()
 	zalivs_count++;
 	zalivs = subarray;
 	}
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 288d05c2a169ba96966ab3053f599f9aebe95f9d
+=======
+>>>>>>> 288d05c2a169ba96966ab3053f599f9aebe95f9d
+=======
+>>>>>>> 288d05c2a169ba96966ab3053f599f9aebe95f9d
+=======
+>>>>>>> 288d05c2a169ba96966ab3053f599f9aebe95f9d
+=======
+>>>>>>> 288d05c2a169ba96966ab3053f599f9aebe95f9d
+>>>>>>> Stashed changes
 
 void Sea::setName(string N)
 {
@@ -27,6 +46,26 @@ void Sea::setSize(float S)
 
 ostream& operator<<(ostream& stream, Sea obj)
 {
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+	stream << obj.name << " ěîđĺ; ";
+	stream << "ăëóáčíŕ: " << obj.deep << "ě; ";
+	stream << "đŕçěĺđ: " << obj.size << "ňűń ęě2";
+=======
+=======
+>>>>>>> 288d05c2a169ba96966ab3053f599f9aebe95f9d
+=======
+>>>>>>> 288d05c2a169ba96966ab3053f599f9aebe95f9d
+=======
+>>>>>>> 288d05c2a169ba96966ab3053f599f9aebe95f9d
+=======
+>>>>>>> 288d05c2a169ba96966ab3053f599f9aebe95f9d
+>>>>>>> Stashed changes
 	stream << obj.name << " море; ";
 	stream << "глубина: " << obj.deep << "м; ";
 	stream << "размер: " << obj.size << "тыс км2";
@@ -37,6 +76,22 @@ ostream& operator<<(ostream& stream, Sea obj)
 	{
 		stream << "\n    " << obj.zalivs[i];
 	}
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 288d05c2a169ba96966ab3053f599f9aebe95f9d
+=======
+>>>>>>> 288d05c2a169ba96966ab3053f599f9aebe95f9d
+=======
+>>>>>>> 288d05c2a169ba96966ab3053f599f9aebe95f9d
+=======
+>>>>>>> 288d05c2a169ba96966ab3053f599f9aebe95f9d
+=======
+>>>>>>> 288d05c2a169ba96966ab3053f599f9aebe95f9d
+>>>>>>> Stashed changes
 
 	return stream;
 }
